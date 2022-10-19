@@ -60,4 +60,5 @@ S3 location: s3://web-yk53-lab/alb_log
 ```
 http://web-alb-751714237.ap-southeast-2.elb.amazonaws.com/ 접속 후 F5 2~3번 수행
 Amazon S3 > Buckets > web-yk53-lab > alb_log/ > AWSLogs/ > 035135759817/ > elasticloadbalancing/ > ap-southeast-2/ > 2022/ > 10/ > 19/ 로그확인
+s3://web-yk53-lab/alb_log/AWSLogs/035135759817/elasticloadbalancing/ap-southeast-2/2022/10/19/035135759817_elasticloadbalancing_ap-southeast-2_app.Web-ALB.3ed6c5952acfe2d7_20221019T0545Z_13.236.99.216_3n9llmor.log.gz
 ```
