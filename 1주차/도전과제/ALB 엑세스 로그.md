@@ -49,5 +49,15 @@ public access 설정에서 Block all public access 체크해제 → 아래 경�
 
 #### ALB 엑세스 로그 활성화
 - General Immersion Day Workshop > 심화모듈 - 웹어플리케이션 > 컴퓨트 - Amazon EC2에 생성한 Web-ALB에 대하여, 엑세스 로그 활성화
+```
+EC2 → Load Balancers → 생성한 로드밸런서 선택 후 아래쪽으로 내려보면 edit attributte 클릭
+Access logs Enable 체크
+S3 location: s3://web-yk53-lab/alb_log
+```
+
 #### ALB 테스트 및 S3내 엑세스 로그 파일 확인 및 다운로드
 - ALB 접속 테스트를 통하여 로그 생성후, 해당 로그 파일 다운로드
+```
+http://web-alb-751714237.ap-southeast-2.elb.amazonaws.com/ 접속 후 F5 2~3번 수행
+Amazon S3 > Buckets > web-yk53-lab > alb_log/ > AWSLogs/ > 035135759817/ > elasticloadbalancing/ > ap-southeast-2/ > 2022/ > 10/ > 19/ 로그확인
+```
