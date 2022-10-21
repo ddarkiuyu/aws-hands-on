@@ -46,7 +46,7 @@ public access 설정에서 Block all public access 체크해제 → 아래 경�
     ]
 }
 ```
-<img src="https://drive.google.com/file/d/1084MTBXY-UnUSJUe7NsNpS1uZHCFdTDE/view?usp=sharing" width="450px" height="300px" title="px(픽셀) 크기 설정" alt="Bucket Policy"></img><br/>
+<img src="https://drive.google.com/file/d/1084MTBXY-UnUSJUe7NsNpS1uZHCFdTDE/view?usp=sharing" width="600px" height="400px" title="px(픽셀) 크기 설정" alt="Bucket Policy"></img><br/>
 
 #### ALB 엑세스 로그 활성화
 - General Immersion Day Workshop > 심화모듈 - 웹어플리케이션 > 컴퓨트 - Amazon EC2에 생성한 Web-ALB에 대하여, 엑세스 로그 활성화
