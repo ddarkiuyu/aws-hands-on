@@ -26,6 +26,22 @@ https://aws.amazon.com/ko/blogs/korea/configuring-an-audit-log-to-capture-databa
 13. “Save changes”를 선택합니다.
 ```
 
+- 단일 이벤트에 대한 감사 활성화
+```
+1. Amazon RDS 콘솔에서 “Parameter groups”을 선택합니다.
+2. 원하는 파라미터 그룹을 선택합니다.
+3. “Parameters”에서 값으로 QUERY_DML을 선택합니다.
+4. “Save changes”를 선택해 변경 사항 저장합니다.
+
+※ 참고
+CONNECT – Connection 성공, Connection 실패, 그리고 disconnections에 대한 로그. 이 값에는 사용자 정보가 포함됩니다.
+QUERY – 구문 또는 권한 오류로 인해 실패한 쿼리를 포함하여 모든 쿼리 텍스트 및 쿼리 결과를 일반 텍스트로 기록합니다.
+QUERY_DCL – QUERY와 유사하지만 DCL 타입 쿼리 (GRANT, REVOKE 등) 만 반환합니다.
+QUERY_DDL – Query와 유사하지만 DDL 타입 쿼리 (CREATE, ALTER 등) 만 반환합니다.
+QUERY_DML – Query와 유사하지만 DML 타입 쿼리 (INSERT, UPDATE 등) 만 반환합니다.
+TABLE – 쿼리 실행의 영향을받은 테이블을 기록합니다. 이 옵션은 Amazon Aurora MySQL에 대한 고급 감사에서만 지원됩니다.
+```
+
 #### Option 그룹 정책 적용
 - RDS Databases > Modify > Log exports에서 Audit log 체크(CloudWatch Log Groups에서 확인을 위한 설정)
 
