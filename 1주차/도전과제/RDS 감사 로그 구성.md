@@ -1,14 +1,11 @@
 ### [RDS]
 #### Amazon RDS MySQL 생성
-```
-AWS General Immersion Day 데이터베이스 생성 참고
-<https://catalog.workshops.aws/general-immersionday/ko-KR/advanced-modules/database/create-rds>
-```
+ - <https://catalog.workshops.aws/general-immersionday/ko-KR/advanced-modules/database/create-rds>
 
 #### Audit 플러그인 활성화
 - Option 그룹 생성
+- <https://aws.amazon.com/ko/blogs/korea/configuring-an-audit-log-to-capture-database-activities-for-amazon-rds-for-mysql-and-amazon-aurora-with-mysql-compatibility/>
 ```
-<https://aws.amazon.com/ko/blogs/korea/configuring-an-audit-log-to-capture-database-activities-for-amazon-rds-for-mysql-and-amazon-aurora-with-mysql-compatibility/>
 1. Amazon RDS 콘솔에서 “Parameter groups”를 선택합니다.
 2. “Create parameter group”을 선택합니다.
 3. “Parameter group family”에서 aurora-mysql5.7을 선택합니다.
